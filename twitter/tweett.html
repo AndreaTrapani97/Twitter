@@ -33,7 +33,7 @@
 
               </h3><!--stampare da js-->
 
-            <button class="btn btn-danger mt-3 d-block ms-3">Logout</button>
+            <button id="Logout" class="btn btn-danger mt-3 d-block ms-3">Logout</button>
 
             </div>
           </form>
@@ -43,23 +43,27 @@
           <h6 class="text-start ms-3">Scrivi il tuo tweet(max.50 caratteri)</h6>
           <textarea
             name=""
-            id=""
+            id="textArea"
             cols="30"
             rows="10"
             maxlength="50"
             placeholder="Scrivi il tuo tweet"
-            class="form-control mb-5 d-block"
+            class="form-control d-block"
           ></textarea>
-          <button id="btnInvia" class="btn btn-info mb-3 d-block ms-auto">
+
+          <p id="caratteriMancanti" >ciao</p>
+
+          <button id="btnInviaTweet" class="btn btn-info mb-3 d-block ms-auto">
             Invia Tweet
           </button>
+
           <hr />
           <div
             class="container-tweet mb-5 mt-5 ms-auto bg-white bg-opacity-50 rounded-3"
           >
             <div id="tweet">
               <label for="tweet">
-                <h6>
+                <h6 id="feedTweet">
                   Scrivi il tuo tweet nella casella qui sopra e postalo qui
                 </h6>
               </label>
@@ -69,6 +73,7 @@
       </div>
     </div>
 
-    <script src="./js/twitter.js"></script>
+    
+    <script src="./js/tweett.js"></script>
   </body>
 </html>
